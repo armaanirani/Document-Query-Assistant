@@ -13,7 +13,6 @@ A Streamlit-powered web application that enables users to upload documents (PDFs
 - [Tech Stack & Tools](#tech-stack--tools)
 - [Skills & Learning Outcomes](#skills--learning-outcomes)
 - [Project Impact](#project-impact)
-- [License](#license)
 
 ---
 
@@ -55,16 +54,47 @@ The **Document Query Assistant** is designed to help users interact with and sea
 
 2. **Create and activate a virtual environment**
 
-   ```python -m venv venv
+   ```bash
+   python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 3. **Install the required dependencies**
 
-   ```pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
 4. **Set up an OpenAi api key**
 
 5. **Run the application**
 
-   ```streamlit run app.py
+   ```bash
+   streamlit run app.py
 
+## Usage
+
+- **Upload Documents:** Navigate to the "Manage Documents" tab to upload PDFs or text files. The system automatically detects duplicates and manages metadata.
+- **Ask Questions:** Use the "Query Documents" tab to input natural language queries and receive answers based on the document contents.
+- **Review Query History:** Check the "Query History" tab to view previous queries and responses, with options to delete individual or all entries.
+- **Configure Models:** Use the "Model Configuration" tab to switch between different OpenAI models for optimal results.
+
+## Tech Stack & Tools
+
+- **Programming Language:** Python
+- **Framework:** Streammlit
+- **Document Processing:** PyPDF2
+- **Vector Indexing & AI:** llama-index, OpenAI API
+- **Version Control:** Git & GitHub
+- **Utilities:** JSON for storage, hashlib for file integrity, datetime for timestammping.
+
+## Skills & Learning Outcomes
+
+- **Web Application Development:** Building interactive UIs with Streamlit.
+- **Document Parsing & Processing:** Extracting and managing text data from PDFs and text files.
+- **Vector Store Indexing:** Implementing vector-based search with document embeddings.
+- **API Integration:** Configuring and integrating with the OpenAI API for natural language processing.
+- **State Management & Persistence:** Handling session states and data storage with JSON.
+- **Error Handling:** Developing robust error handling and debugging techniques.
+
+## Project Impact
+
+The Document Query Assistant not only provided a practical solution for document management and intelligent querying but also served as a significant learning experience. The project allowed me to bridge advanced AI techniques with user-centric design, significantly boosting my expertise in full-stack development and natural language processing.
